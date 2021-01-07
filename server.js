@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 const sessionOptions = session({
-  secret: 'akasdfj0út23453456+54qt23qv  qwf qwer qwer qewr asdasdasda a6()',
+  secret: 'Uf7*Eh9(Oc4(Kz5!Qn3$Dd6(Er6^Vf0-Md1,Gg8%Rc5;Vq8]De9#Eg4[Kj5?Tz3]Zn1',
   store: new MongoStore({ mongooseConnection: mongoose.connection }),
   resave: false,
   saveUninitialized: false,
@@ -52,7 +52,7 @@ app.use(routes);
 
 app.on('pronto', () => {
   app.listen(3000, () => {
-    console.log('Acessar http://localhost:3000');
-    console.log('Servidor executando na porta 3000');
+    console.log('Acessar http://localhost:8080');
+    console.log('Servidor executando na porta 8080');
   });
 });
